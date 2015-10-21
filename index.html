@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="http://cdn.rawgit.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/aahan/pygments-github-style/master/jekyll-github.css">
+    <title>examplejs</title>
+    <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <style>
+    
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+      }
+          
+      .highlight-example:after {
+        color: #959595;
+        content: "Example";
+        font-size: 12px;
+        font-weight: 700;
+        left: 15px;
+        letter-spacing: 1px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 15px;
+      }
+      
+      .highlight-example {
+        border-color: #e5e5e5 #eee #eee;
+        border-style: solid;
+        border-width: 1px 0;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05) inset;
+        margin: 0 -15px 15px;
+        padding: 45px 15px 15px;
+        position: relative;
+      }
+      
+      .highlight-example {
+        background-color: #fff;
+        border-color: #ddd;
+        border-radius: 4px 4px 0 0;
+        border-width: 1px;
+        box-shadow: none;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      
+      .highlight-example + .highlight {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-width: 1px;
+        margin: -16px 0 15px;
+        border-width: 1px;
+      }
+
+      .highlight {
+        background-color: #f7f7f9;
+        border: 1px solid #e1e1e8;
+        border-radius: 4px;
+        margin-bottom: 14px;
+        padding: 0;
+      }
+
+      .highlight pre {
+        background-color: transparent;
+        border: 0 none;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 0;
+      }
+      
+      article.markdown-body {
+        max-width: 728px;
+        margin: 50px auto;
+      }
+      
+      body > footer {
+        border-top: 1px solid #eee;
+        color: #767676;
+        font-size: 12px;
+        line-height: 1.5;
+        margin-top: 40px;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        position: relative;
+        max-width: 728px;
+        margin: 50px auto;
+      }
+      
+      body > footer > * {
+        float: left;
+        line-height: 16px;
+        font-size: 12px;
+      }
+      body > footer > *:last-child {
+        float: right;
+      }
+      
+      body > footer > nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      body > footer > nav ul li {
+        display: inline-block;
+      }
+      
+      body > footer > nav ul li + li {
+        margin-left: 10px;
+      }
+      
+      a {
+        color: #4078c0;
+        text-decoration: none;
+      }
+      
+      img[style*='fixed'] {
+        z-index: 10;
+      }
+      
+    </style>
+  </head>
+  <body>
+    
+    <a href="https://github.com/benignware-labs/examplejs">
+      <!-- github badge -->
+      <img style="position: fixed; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
+    </a>
+    
+    <article class="markdown-body"><h2 id="examplejs">examplejs</h2>
+<blockquote>
+<p>Generate highlight blocks from runtime browser samples</p>
+</blockquote>
+<p>Include examplejs dependencies. Optionally include a theme stylesheet.</p>
+<div><script src="js/example.js"></script>
+<link rel="stylesheet" href="css/bootstrap.css"/>
+</div>
+
+
+
+<div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/example.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;css/bootstrap.css&quot;</span><span class="nt">/&gt;</span>
+</pre></div>
+<p>Optionaly require highlightjs for syntax highlighting:</p>
+<div><link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/github.min.css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+</div>
+
+
+
+<div class="highlight"><pre><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/github.min.css&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+<p>Use DOM Annotations to highlight your code as an example.</p>
+<div class="highlight-example">
+<h2>Example: Hello World!</h2>
+<p>This example requires jQuery</p>
+
+<!-- @example -->
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+<p>Provide markup, styles and Javascript</p>
+<!-- @example !-->
+<h3 id="test">Hello World!</h3>
+<p>Welcome to the Jungle!</p>
+<!--/-->
+
+<p>Provide styles</p>
+<!-- @example -->
+<style>
+   .highlighted {
+     color: teal;
+   }
+</style>
+
+<p>Provide Javascript</p>
+<!-- @example -->
+<script>
+  $('#test').addClass('highlighted');
+</script>
+</div>
+
+
+<div class="highlight"><pre><span class="nt">&lt;h2&gt;</span>Example: Hello World!<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;p&gt;</span>This example requires jQuery<span class="nt">&lt;/p&gt;</span>
+
+<span class="c">&lt;!-- @example --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;http://code.jquery.com/jquery-1.11.2.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Provide markup, styles and Javascript<span class="nt">&lt;/p&gt;</span>
+<span class="c">&lt;!-- @example !--&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">id=</span><span class="s">&quot;test&quot;</span><span class="nt">&gt;</span>Hello World!<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;p&gt;</span>Welcome to the Jungle!<span class="nt">&lt;/p&gt;</span>
+<span class="c">&lt;!--/--&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Provide styles<span class="nt">&lt;/p&gt;</span>
+<span class="c">&lt;!-- @example --&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+   <span class="nc">.highlighted</span> <span class="p">{</span>
+     <span class="k">color</span><span class="o">:</span> <span class="nb">teal</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Provide Javascript<span class="nt">&lt;/p&gt;</span>
+<span class="c">&lt;!-- @example --&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#test&#39;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;highlighted&#39;</span><span class="p">);</span>
+<span class="nt">&lt;/script&gt;</span>
+</pre></div>
+<h3 id="dom-annotation-specs">DOM Annotation Specs</h3>
+<ul>
+<li>Single comments target the next significant sibling: <code>&lt;!-- ... --&gt; &lt;elem&gt;</code></li>
+<li>Block comments can be defined by the pattern <code>&lt;!-- ... !--&gt; &lt;elem&gt; &lt;elem&gt; &lt;!--/ ... --&gt;</code></li>
+<li>Comments can contain certain tags, designated by a leading <code>@</code> which can have attributes assigned by the pattern <code>var1=34 var2=&#39;string&#39;</code>.</li>
+</ul>
+</article>
+    <footer>
+      <div class="disclaimer">
+        
+           &copy; 2015
+          
+            <a href="https://github.com/benignware">
+          
+            Benignware
+          
+            </a>
+          
+        
+      </div>
+      <nav>
+        <ul>
+          
+            <li>v0.0.1</li>
+          
+          
+            <li><a href="https://github.com/benignware-labs/examplejs/archive/v0.0.1.zip">Download</a></li>
+          
+          
+            <li><a href="https://github.com/benignware-labs/examplejs/issues">Bugs</a></li>
+          
+        </ul>
+      </nav>
+      
+    </footer>
+  </body>
+</html>
