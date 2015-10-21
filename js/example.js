@@ -96,7 +96,6 @@
                   }
                   mutations.forEach(function (mutation) {
                     toArray(mutation.addedNodes).forEach(function(addedNode) {
-                      console.log("node added: ", addedNode);
                       callback(addedNode);
                     });
                   });
