@@ -3,6 +3,7 @@ examplejs
 
 > Generate highlight blocks from runtime browser samples
 
+[Demo](http://benignware-labs.github.io/examplejs)
 
 Include examplejs dependencies. Optionally include a theme stylesheet.
 
