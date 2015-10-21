@@ -72,9 +72,12 @@
                 item = get(node),
                 data = node.outerHTML || node.nodeType === 3 && node.textContent,
                 parent = get(node.parentNode),
-                clone = node.cloneNode();
+                clone;
               if (!item) {
+                clone = node.cloneNode();
                 cache.push({node: node, clone: clone, data: data});
+              } else {
+                clone = item.clone;
               }
               if (parent) {
                 parent.clone.appendChild(clone);
@@ -93,14 +96,15 @@
                   }
                   mutations.forEach(function (mutation) {
                     toArray(mutation.addedNodes).forEach(function(addedNode) {
+                      console.log("node added: ", addedNode);
                       callback(addedNode);
                     });
                   });
                 })).observe(doc, {
                   childList: true,
                   subtree : true,
-                  attributes: false, 
-                  characterData : false
+                  attributes: true, 
+                  characterData : true
                 });
               } else {
                 // TODO: Fallback
