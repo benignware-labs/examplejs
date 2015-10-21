@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>examplejs</title>
+    
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>examplejs</h1>
+      </div>
+      
+      
+      <p>Include examplejs dependencies. Optionally include a theme stylesheet.</p>
+      
+      <!-- @example !-->
+      <script src="../src/js/example.js"></script>
+      <link rel="stylesheet" href="../src/css/bootstrap.css"/>
+      <!--/-->
+      
+      <p>Optionally require highlightjs for syntax highlighting:</p>
+      
+      <!-- @example !-->
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/github.min.css">
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+      <!--/-->
+      
+      <p>Use DOM Annotations to highlight your code as an example:</p>
+      
+      <!-- @example !-->
+      <h2>Example: Hello World!</h2>
+      <p>This example requires jQuery</p>
+      
+      <!-- @example -->
+      <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+      
+      <p>Provide markup, styles and Javascript</p>
+      <!-- @example !-->
+      <h3 id="test">Hello World!</h3>
+      <p>Welcome to the Jungle!</p>
+      <!--/-->
+      
+      <p>Provide styles</p>
+      <!-- @example -->
+      <style>
+         .highlighted {
+           color: teal;
+         }
+      </style>
+      
+      <p>Provide Javascript</p>
+      <!-- @example -->
+      <script>
+        $('#test').addClass('highlighted');
+      </script>
+      <!--/-->
+    </div>
+  </body>
+</html>

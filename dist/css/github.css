@@ -1,0 +1,58 @@
+.highlight > pre, 
+.markdown-body .highlight > pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  margin-bottom: 0;
+  word-break: normal;
+  word-wrap: normal;
+  border-style: none;
+}
+
+.highlight,
+.highlight-example {
+  margin-bottom: 16px;
+}
+/*
+
+.highlight-example {
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #f7f7f7;
+  border-bottom: none;
+  padding: 40px 20px 20px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.highlight-example + .highlight > pre {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 20px;
+}
+
+.highlight-example:before {
+  background: #f5f5f5;
+  content: "Example";
+  display: inline-block;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  word-wrap: break-word;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 9px 10px 10px;
+  border-bottom-right-radius: 3px;
+  font-weight: bold;
+}
+*/

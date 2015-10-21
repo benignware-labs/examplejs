@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+      
+      console.log("init...");
+      
+      var Mod = "J";
+      
+      var iframe = document.createElement('iframe');
+      iframe.src = "javascript:false";
+      iframe.onload = function() {
+        var doc = this.contentDocument;
+        var script = doc.createElement('script');
+        script.type = "text/javascript";
+        script.src = 'module.js';
+        script.onload = function(e) {
+          console.log("SCRIPT LOADED", e, this, script.innerHTML);
+        };
+        doc.documentElement.firstChild.appendChild(script);
+      };
+      
+      document.documentElement.firstChild.appendChild(iframe);
+      
+      /*
+      $.ajax('module.js', {dataType: 'text'}).done(function(data, xhr) {
+       var module = eval(data);
+       console.log("DONE: ", data, module);
+       console.log("MODULE: ", module);
+      }).fail(function() {
+        console.log("FAIL: ", arguments);
+      });
+      */
+    </script>
+  </head>
+  <body>
+    
+    <script language="javascript">
+    (function() {
+      Mod = "HH";
+      document.write("<script src='module.js'><\/script>");
+    });
+    </script>
+  </body>
+</html>

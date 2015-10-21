@@ -1,0 +1,16 @@
+.highlight-example,
+.highlight > pre {
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  padding: 15px;
+}
+
+.highlight-example {
+  border: 1px solid #ddd;
+  background: inherit;
+}
+
+.highlight-example + .highlight > pre {
+  margin-top: 0;
+  border-top: none;
+}
