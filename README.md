@@ -38,9 +38,9 @@ Use DOM Annotations to highlight your code as an example.
 <p>Provide styles</p>
 <!-- @example -->
 <style>
-   .highlighted {
-     color: teal;
-   }
+  .highlighted {
+    color: teal;
+  }
 </style>
 
 <p>Provide Javascript</p>
