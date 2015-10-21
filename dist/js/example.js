@@ -151,11 +151,7 @@
             
             node = source.childNodes[i];
             
-            // Detect block close
-            if (current && node.nodeType === 8 && node.data.match(blockClosePattern)) {
-              current.closed = true;
-              current = open.pop();
-            }
+            
             
             // Add node to parents
             for (o = 0; o < open.length; o++) {
@@ -214,6 +210,12 @@
               current.closed = true;
             }
             
+            // Detect block close
+            if (current && node.nodeType === 8 && node.data.match(blockClosePattern)) {
+              current.closed = true;
+              current = open.pop();
+            }
+            
             // Recursive 
             if (node.nodeType === 1) {
               try {
@@ -248,8 +250,8 @@
      * @param {Object} string
      */
     pretty = function(string) {
-      string = string.replace(/^\s*\n/gm, "");
-      string = string.replace(/(\s+$)/gm, '');
+      string = string.replace(/^\s*\n/, "");
+      string = string.replace(/(\s+$)/, '');
       var
         lines = string.split("\n"),
         indent = 0,
